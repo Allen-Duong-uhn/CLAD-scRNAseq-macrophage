@@ -1,6 +1,13 @@
 # =====================================
 # Integration of CLAD and CIT lung scRNA-seq datasets
 #
+# Workflow:
+# 1. Load clustered Seurat objects and merge
+# 2. Run pre-integration workup
+# 3. Perform CCA integration
+# 4. Manual cluster annotation
+# 5. Save objects
+#
 # Input:
 #   - Clustered Seurat objects generated from
 #     preprocessing pipeline
@@ -10,11 +17,6 @@
 #   - Marker tables
 #   - Annotated cell types
 #
-# 1. Load clustered Seurat objects and merge
-# 2. Run pre-integration workup
-# 3. Perform CCA integration
-# 4. Manual cluster annotation
-# 5. Save objects
 # =====================================
 
 # Load packages
