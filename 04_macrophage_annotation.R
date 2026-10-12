@@ -266,8 +266,8 @@ macs_downsample <- subset(
     downsample = 4000
 )
 
-Idents(macs) <- "cca_clusters"
-Idents(macs_downsample) <- "cca_clusters"
+Idents(macs) <- "MacsLabels_1.0"
+Idents(macs_downsample) <- "MacsLabels_1.0"
 
 # =====================================
 # Save outputs
@@ -302,5 +302,5 @@ saveRDS(
 
 writeLines(
     capture.output(sessionInfo()),
-    "results/macrophages/sessionInfo_annotation.txt"
+    "results/macrophages/sessionInfo_04.txt"
 )
