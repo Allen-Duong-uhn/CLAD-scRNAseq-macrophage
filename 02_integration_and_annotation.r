@@ -2,11 +2,11 @@
 # Integration of CLAD and CIT lung scRNA-seq datasets
 #
 # Workflow:
-# 1. Load clustered Seurat objects and merge
-# 2. Run pre-integration workup
-# 3. Perform CCA integration
-# 4. Manual cluster annotation
-# 5. Save objects
+#   1. Load clustered Seurat objects and merge
+#   2. Run pre-integration workup
+#   3. Perform CCA integration
+#   4. Manual cluster annotation
+#   5. Save objects
 #
 # Input:
 #   - Clustered Seurat objects generated from
@@ -32,20 +32,20 @@ options(future.globals.maxSize = 4000 * 1024^3)
 # =====================================
 
 sample_ids <- c(
-  "CLAD040lung",
-  "CLAD046lung",
-  "CLAD053lung",
-  "CLAD062lung",
-  "CLAD063lung",
-  "CLAD064lung",
-  "CLAD068lung",
-  "CLAD070lung",
-  "CLAD073lung",
-  "CLAD080lung",
-  "CLAD081lung",
-  "CLAD082lung",
-  "CLAD087lung",
-  "CLAD093lung",
+  "CLAD01",
+  "CLAD02",
+  "CLAD03",
+  "CLAD04",
+  "CLAD05",
+  "CLAD06",
+  "CLAD07",
+  "CLAD08",
+  "CLAD09",
+  "CLAD10",
+  "CLAD11",
+  "CLAD12",
+  "CLAD13",
+  "CLAD14",
   "CIT2",
   "CIT3",
   "CIT4",
@@ -337,5 +337,5 @@ saveRDS(
 
 writeLines(
   capture.output(sessionInfo()),
-  "results/integrated/sessionInfo.txt"
+  "results/integrated/sessionInfo_02.txt"
 )
